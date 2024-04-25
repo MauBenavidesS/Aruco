@@ -6,11 +6,7 @@ output_folder = "captured_images"
 os.makedirs(output_folder, exist_ok=True)
 
 # Initialize webcam
-cap = cv2.VideoCapture(0)  # 0 corresponds to the default camera (you can change it if you have multiple cameras)
-
-# Set the resolution of the camera (optional)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+cap = cv2.VideoCapture(10)  # 0 corresponds to the default camera (you can change it if you have multiple cameras)
 
 # Counter for image filenames
 image_counter = 0
